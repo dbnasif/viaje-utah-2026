@@ -379,6 +379,10 @@
     <span class="bnb-icon">📅</span>
     <span class="bnb-label">Plan</span>
   </button>
+  <button class="bottom-nav-btn" onclick="mostrar('paseos')">
+    <span class="bnb-icon">🏔️</span>
+    <span class="bnb-label">Paseos</span>
+  </button>
   <button class="bottom-nav-btn" onclick="mostrar('compras')">
     <span class="bnb-icon">🛍️</span>
     <span class="bnb-label">Compras</span>
@@ -426,6 +430,12 @@
       <h2>Itinerario</h2>
       <p>Día a día del viaje</p>
       <span class="tag">11 noches</span>
+    </a>
+    <a class="card" onclick="mostrar('paseos')">
+      <span class="icon">🏔️</span>
+      <h2>Paseos y naturaleza</h2>
+      <p>12 opciones a menos de 1 hora de lo de Guille</p>
+      <span class="tag">Gratis la mayoría</span>
     </a>
     <a class="card" onclick="mostrar('compras')">
       <span class="icon">🛍️</span>
@@ -588,6 +598,13 @@
       <div class="dato-row"><span class="dato-label">Fotografía</span><span class="dato-valor">12 disponibles</span></div>
       <div class="dato-row"><span class="dato-label">Chefs</span><span class="dato-valor">4 disponibles</span></div>
     </div>
+
+    <div class="info-card" style="border-left: 4px solid #34c759;">
+      <h3>📍 Casa de Guille</h3>
+      <div class="dato-row"><span class="dato-label">Dirección</span><span class="dato-valor">3056 S 200 E, South Salt Lake, UT</span></div>
+      <div class="dato-row"><span class="dato-label">Distancia al Airbnb</span><span class="dato-valor">~5 min en auto</span></div>
+    </div>
+    <a href="https://maps.google.com/?q=3056+S+200+E+South+Salt+Lake+UT" target="_blank" class="mapa-btn">📍 Casa de Guille — Abrir en Maps</a>
   </div>
 </div>
 
@@ -708,6 +725,153 @@
         <div class="timeline-desc">Llegada Ezeiza 09:45 hs</div>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- SECCIÓN: PASEOS -->
+<div id="paseos" class="seccion">
+  <div class="seccion-header">
+    <div class="header-bar">
+      <button class="btn-volver" onclick="mostrar('indice')">← Inicio</button>
+      <div class="nav-pills">
+        <button class="pill" onclick="mostrar('vuelos')">🛫 Vuelos</button>
+        <button class="pill" onclick="mostrar('alojamiento')">🏠 Alojamiento</button>
+        <button class="pill" onclick="mostrar('auto')">🚗 Auto</button>
+        <button class="pill" onclick="mostrar('itinerario')">📅 Itinerario</button>
+        <button class="pill" onclick="mostrar('compras')">🛍️ Compras</button>
+        <button class="pill" onclick="mostrar('resumen')">💰 Financiero</button>
+      </div>
+    </div>
+  </div>
+  <div class="seccion-content">
+    <div class="seccion-titulo">🏔️ Paseos y naturaleza</div>
+    <div class="seccion-subtitulo">Todos a menos de 1 hora desde lo de Guille · 3056 S 200 E, South Salt Lake</div>
+
+    <div class="info-card" style="background:#f0fdf4; border-left:4px solid #22c55e;">
+      <h3 style="color:#15803d;">🟢 Súper cerca — menos de 20 min</h3>
+    </div>
+
+    <div class="info-card">
+      <h3>⛰️ Ensign Peak</h3>
+      <div class="dato-row"><span class="dato-label">Distancia</span><span class="dato-valor">~5 min de Guille</span></div>
+      <div class="dato-row"><span class="dato-label">Dificultad</span><span class="dato-valor">Fácil · 1 milla ida y vuelta · 20 min de subida</span></div>
+      <div class="dato-row"><span class="dato-label">Costo</span><span class="dato-valor">Gratis</span></div>
+      <div class="dato-row"><span class="dato-label">Por qué ir</span><span class="dato-valor">Vista panorámica de toda SLC, el Great Salt Lake y las montañas. Donde Brigham Young planeó la ciudad en 1847. Ideal al atardecer.</span></div>
+      <div class="dato-row"><span class="dato-label">⚠️ Tip</span><span class="dato-valor">Sin sombra — ir temprano o al atardecer. Mucha agua.</span></div>
+      <a href="https://maps.google.com/?q=Ensign+Peak+Salt+Lake+City+Utah" target="_blank" class="mapa-btn" style="margin-top:12px;">📍 Ver en Maps</a>
+    </div>
+
+    <div class="info-card">
+      <h3>🌳 Liberty Park</h3>
+      <div class="dato-row"><span class="dato-label">Distancia</span><span class="dato-valor">~8 min de Guille</span></div>
+      <div class="dato-row"><span class="dato-label">Dificultad</span><span class="dato-valor">Muy fácil · plano · apto todo público</span></div>
+      <div class="dato-row"><span class="dato-label">Costo</span><span class="dato-valor">Gratis</span></div>
+      <div class="dato-row"><span class="dato-label">Por qué ir</span><span class="dato-valor">80 acres con senderos, laguna, aviary con aves exóticas y juegos. El parque más popular de SLC. Ideal para una tarde tranquila.</span></div>
+      <a href="https://maps.google.com/?q=Liberty+Park+Salt+Lake+City+Utah" target="_blank" class="mapa-btn" style="margin-top:12px;">📍 Ver en Maps</a>
+    </div>
+
+    <div class="info-card">
+      <h3>🕊️ Memory Grove Park</h3>
+      <div class="dato-row"><span class="dato-label">Distancia</span><span class="dato-valor">~12 min de Guille</span></div>
+      <div class="dato-row"><span class="dato-label">Dificultad</span><span class="dato-valor">Muy fácil · senderos sombreados</span></div>
+      <div class="dato-row"><span class="dato-label">Costo</span><span class="dato-valor">Gratis</span></div>
+      <div class="dato-row"><span class="dato-label">Por qué ir</span><span class="dato-valor">Parque histórico junto al Capitolio con arroyo, monumentos y senderos frescos. Muy tranquilo y fotogénico. Conecta con City Creek Canyon.</span></div>
+      <a href="https://maps.google.com/?q=Memory+Grove+Park+Salt+Lake+City+Utah" target="_blank" class="mapa-btn" style="margin-top:12px;">📍 Ver en Maps</a>
+    </div>
+
+    <div class="info-card">
+      <h3>🪑 The Living Room Trail</h3>
+      <div class="dato-row"><span class="dato-label">Distancia</span><span class="dato-valor">~15 min de Guille</span></div>
+      <div class="dato-row"><span class="dato-label">Dificultad</span><span class="dato-valor">Moderado-difícil · empinado con rocas</span></div>
+      <div class="dato-row"><span class="dato-label">Costo</span><span class="dato-valor">Gratis (parking 3hs gratis)</span></div>
+      <div class="dato-row"><span class="dato-label">Por qué ir</span><span class="dato-valor">Formaciones rocosas naturales con forma de sillones y sofás. Vistas panorámicas del valle. Trail muy popular entre locales.</span></div>
+      <div class="dato-row"><span class="dato-label">⚠️ Tip</span><span class="dato-valor">Muy expuesto al sol — ir temprano o al atardecer. Zapatillas cerradas obligatorio.</span></div>
+      <a href="https://maps.google.com/?q=Living+Room+Trail+Salt+Lake+City+Utah" target="_blank" class="mapa-btn" style="margin-top:12px;">📍 Ver en Maps</a>
+    </div>
+
+    <div class="info-card" style="background:#eff6ff; border-left:4px solid #3b82f6;">
+      <h3 style="color:#1d4ed8;">🔵 Cerca — 20 a 40 min</h3>
+    </div>
+
+    <div class="info-card">
+      <h3>🌲 Millcreek Canyon</h3>
+      <div class="dato-row"><span class="dato-label">Distancia</span><span class="dato-valor">~20 min de Guille</span></div>
+      <div class="dato-row"><span class="dato-label">Dificultad</span><span class="dato-valor">Varios niveles · Dog Lake (fácil, 5 millas) o trails más exigentes</span></div>
+      <div class="dato-row"><span class="dato-label">Costo</span><span class="dato-valor">Pequeña tarifa de entrada al cañón</span></div>
+      <div class="dato-row"><span class="dato-label">Por qué ir</span><span class="dato-valor">El cañón urbano favorito de los locales. Más fresco en verano que la ciudad. Perros bienvenidos. Ideal para 2-3 horas sin mucho esfuerzo.</span></div>
+      <a href="https://maps.google.com/?q=Millcreek+Canyon+Salt+Lake+City+Utah" target="_blank" class="mapa-btn" style="margin-top:12px;">📍 Ver en Maps</a>
+    </div>
+
+    <div class="info-card">
+      <h3>🏞️ Big Cottonwood Canyon</h3>
+      <div class="dato-row"><span class="dato-label">Distancia</span><span class="dato-valor">~25 min de Guille</span></div>
+      <div class="dato-row"><span class="dato-label">Dificultad</span><span class="dato-valor">Varios niveles · el drive solo ya vale la pena</span></div>
+      <div class="dato-row"><span class="dato-label">Costo</span><span class="dato-valor">Gratis el ingreso · algunos trails tienen tarifa de parking</span></div>
+      <div class="dato-row"><span class="dato-label">Por qué ir</span><span class="dato-valor">Cañón dramático con el río Cottonwood corriendo al costado de la ruta, formaciones rocosas y paisajes alpinos. Impresionante solo de drive con paradas.</span></div>
+      <a href="https://maps.google.com/?q=Big+Cottonwood+Canyon+Utah" target="_blank" class="mapa-btn" style="margin-top:12px;">📍 Ver en Maps</a>
+    </div>
+
+    <div class="info-card">
+      <h3>🌊 Donut Falls</h3>
+      <div class="dato-row"><span class="dato-label">Distancia</span><span class="dato-valor">~30 min de Guille</span></div>
+      <div class="dato-row"><span class="dato-label">Dificultad</span><span class="dato-valor">Fácil · 2.5 km · apto familias</span></div>
+      <div class="dato-row"><span class="dato-label">Costo</span><span class="dato-valor">Tarifa de parking</span></div>
+      <div class="dato-row"><span class="dato-label">Por qué ir</span><span class="dato-valor">Cascada única donde el agua cae por el centro de una roca en forma de dona. Muy fotogénica. Ideal para llevar chicos.</span></div>
+      <a href="https://maps.google.com/?q=Donut+Falls+Big+Cottonwood+Canyon+Utah" target="_blank" class="mapa-btn" style="margin-top:12px;">📍 Ver en Maps</a>
+    </div>
+
+    <div class="info-card">
+      <h3>🏔️ Little Cottonwood Canyon + Cecret Lake</h3>
+      <div class="dato-row"><span class="dato-label">Distancia</span><span class="dato-valor">~35 min de Guille</span></div>
+      <div class="dato-row"><span class="dato-label">Dificultad</span><span class="dato-valor">Moderado · 4.5 km · lago alpino a 2.900m</span></div>
+      <div class="dato-row"><span class="dato-label">Costo</span><span class="dato-valor">$10 parking</span></div>
+      <div class="dato-row"><span class="dato-label">Por qué ir</span><span class="dato-valor">En julio las flores silvestres están en su pico máximo (Indian paintbrush, lupine, columbine). Lago alpino rodeado de picos. Una de las mejores vistas de Utah.</span></div>
+      <div class="dato-row"><span class="dato-label">⚠️ Tip</span><span class="dato-valor">Llegar temprano — el parking se llena. Llevar abrigo, hace frío a esa altura.</span></div>
+      <a href="https://maps.google.com/?q=Cecret+Lake+Trail+Little+Cottonwood+Canyon+Utah" target="_blank" class="mapa-btn" style="margin-top:12px;">📍 Ver en Maps</a>
+    </div>
+
+    <div class="info-card" style="background:#fff7ed; border-left:4px solid #f97316;">
+      <h3 style="color:#c2410c;">🟠 Excursión de día — 40 a 60 min</h3>
+    </div>
+
+    <div class="info-card">
+      <h3>🦬 Antelope Island State Park</h3>
+      <div class="dato-row"><span class="dato-label">Distancia</span><span class="dato-valor">~45 min de Guille</span></div>
+      <div class="dato-row"><span class="dato-label">Dificultad</span><span class="dato-valor">Fácil · varios trails · apto todo público</span></div>
+      <div class="dato-row"><span class="dato-label">Costo</span><span class="dato-valor">Tarifa de entrada al parque estatal</span></div>
+      <div class="dato-row"><span class="dato-label">Por qué ir</span><span class="dato-valor">Isla dentro del Great Salt Lake con manadas de bisontes en libertad. Podés flotar en el lago. Paisajes únicos de sal y agua. El atardecer con reflejo en el lago es icónico.</span></div>
+      <div class="dato-row"><span class="dato-label">⚠️ Tip</span><span class="dato-valor">Parque certificado Dark Sky — si se quedan al anochecer ven las estrellas increíble.</span></div>
+      <a href="https://maps.google.com/?q=Antelope+Island+State+Park+Utah" target="_blank" class="mapa-btn" style="margin-top:12px;">📍 Ver en Maps</a>
+    </div>
+
+    <div class="info-card">
+      <h3>🏔️ Park City + Iron Canyon Trail</h3>
+      <div class="dato-row"><span class="dato-label">Distancia</span><span class="dato-valor">~45 min de Guille</span></div>
+      <div class="dato-row"><span class="dato-label">Dificultad</span><span class="dato-valor">Fácil · 2 millas · vistas del valle</span></div>
+      <div class="dato-row"><span class="dato-label">Costo</span><span class="dato-valor">Gratis</span></div>
+      <div class="dato-row"><span class="dato-label">Por qué ir</span><span class="dato-valor">La ciudad más linda del área: histórica, boutiques, restaurants. El trail es corto y con vistas. Combinar con compras en los outlets de Junction Commons.</span></div>
+      <a href="https://maps.google.com/?q=Iron+Canyon+Trail+Park+City+Utah" target="_blank" class="mapa-btn" style="margin-top:12px;">📍 Ver en Maps</a>
+    </div>
+
+    <div class="info-card">
+      <h3>💦 Bridal Veil Falls — Provo Canyon</h3>
+      <div class="dato-row"><span class="dato-label">Distancia</span><span class="dato-valor">~50 min de Guille</span></div>
+      <div class="dato-row"><span class="dato-label">Dificultad</span><span class="dato-valor">Muy fácil · accesible desde el auto o caminata corta</span></div>
+      <div class="dato-row"><span class="dato-label">Costo</span><span class="dato-valor">Gratis</span></div>
+      <div class="dato-row"><span class="dato-label">Por qué ir</span><span class="dato-valor">Cascada enorme y el Provo Canyon es uno de los drives más bellos de Utah. Combinar con una parada en el pueblo de Provo.</span></div>
+      <a href="https://maps.google.com/?q=Bridal+Veil+Falls+Provo+Canyon+Utah" target="_blank" class="mapa-btn" style="margin-top:12px;">📍 Ver en Maps</a>
+    </div>
+
+    <div class="info-card">
+      <h3>🌍 Bonneville Salt Flats</h3>
+      <div class="dato-row"><span class="dato-label">Distancia</span><span class="dato-valor">~55 min de Guille</span></div>
+      <div class="dato-row"><span class="dato-label">Dificultad</span><span class="dato-valor">Sin caminata · se recorre en auto</span></div>
+      <div class="dato-row"><span class="dato-label">Costo</span><span class="dato-valor">Gratis</span></div>
+      <div class="dato-row"><span class="dato-label">Por qué ir</span><span class="dato-valor">Las salinas de Piratas del Caribe e Independence Day. 30.000 acres de sal blanca pura. Con agua en la superficie crea un efecto espejo increíble. Las fotos parecen de otro planeta.</span></div>
+      <div class="dato-row"><span class="dato-label">⚠️ Tip</span><span class="dato-valor">Ideal al amanecer o atardecer para fotos. No ir tras lluvia — el suelo queda muy blando.</span></div>
+      <a href="https://maps.google.com/?q=Bonneville+Salt+Flats+Utah" target="_blank" class="mapa-btn" style="margin-top:12px;">📍 Ver en Maps</a>
+    </div>
+
   </div>
 </div>
 
